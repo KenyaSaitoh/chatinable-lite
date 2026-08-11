@@ -1,14 +1,14 @@
-# Chatinable Open
+# Chatinable Lite
 
-**インストーラを1つ実行するだけで、Java・Spring Boot・SQL・Python・TypeScript の
-学習環境がまるごと手に入る、オールインワン学習デスクトップアプリです。**
+**インストーラを1つ実行するだけで、Java の学習環境がまるごと手に入る、
+オールインワン学習デスクトップアプリです。**
 
-JDK も Node.js も Python も DB も、個別にインストールする必要はありません。
+JDK を別途インストールする必要はありません。
 教材・コードエディタ・実行環境・AI Teacher がひとつのアプリに統合されています。
 
-Chatinable Open は **BYOK 版**です。AI Teacher 機能はご自身の
+Chatinable Lite は **BYOK 版**です。AI Teacher 機能はご自身の
 [Anthropic API キー](https://console.anthropic.com/) で動作します
-（Bring Your Own Key）。
+（Bring Your Own Key）。UI・教材は**日本語のみ**です。
 
 ---
 
@@ -16,27 +16,40 @@ Chatinable Open は **BYOK 版**です。AI Teacher 機能はご自身の
 
 **［[最新版をダウンロード](../../releases/latest)］**
 
-`Chatinable-Open-Setup-<version>.exe` をダウンロードして実行してください。
+**コースごとに独立したインストーラ**になっています。学びたいコースのものを
+ダウンロードして実行してください。
+
+| インストーラ | 収録コース |
+|---|---|
+| `chatinable-lite-java-basic-setup-<version>.exe` | Java 基礎編 |
+| `chatinable-lite-java-advanced-setup-<version>.exe` | Java 上級編 |
+| `chatinable-lite-java-testing-setup-<version>.exe` | Java テスト 基礎＆実践 |
+
+3 本は別々のアプリとしてインストールされるため、**同一 PC に共存できます**
+（設定と学習ファイルの保存先は 3 本で共有されます）。
 
 | | |
 |---|---|
 | 対応 OS | Windows 10 / 11（64bit） |
-| インストーラサイズ | 約 200MB |
-| インストール後 | 約 600MB |
+| インストーラサイズ | 約 130MB（1 本あたり） |
+| インストール後 | 約 370MB（1 本あたり） |
 | 管理者権限 | 不要（ユーザー領域にインストールされます） |
+
+インストーラの表示は日本語です。管理者権限は不要で、ユーザー領域にインストールされます。
 
 インストーラは署名されていないため、SmartScreen の警告が出る場合があります。
 「詳細情報」→「実行」で進めてください。
-
-インストーラの起動時に言語を選択できます（日本語・英語・フランス語・ドイツ語・
-スペイン語・ポルトガル語(BR)・簡体中文・韓国語・インドネシア語）。
-選択した言語がアプリの初期 UI 言語になります。
 
 ---
 
 ## 初回設定
 
-AI Teacher を使うには API キーの登録が必要です。⚙ 設定パネルから登録してください。
+インストール後にアプリを起動すると、収録コースの1問目がそのまま開きます
+（コースを選ぶ操作は不要です）。
+
+AI Teacher を使うには API キーの登録が必要です。初回起動時に案内のダイアログが出るので、
+⚙ 設定パネルから登録してください
+（「今後このお知らせを表示しない」にチェックを入れると次回から表示されません）。
 キーは OS の資格情報ストア（`safeStorage`）で暗号化して端末内に保存され、
 外部に送信されるのは各 API 提供元のみです。
 
@@ -49,23 +62,20 @@ AI Teacher を使うには API キーの登録が必要です。⚙ 設定パネ
 > API の利用料金は、各 API 提供元からお客様に直接請求されます。
 > 本アプリの作者は課金に関与しません。
 
+登録した API キーは 3 本のインストーラで共有されるため、1 度登録すれば
+他のコースのアプリでもそのまま使えます。
+
 ---
 
 ## 収録コース
 
-| コース | 種別 | 問数 |
-|---|---|---|
-| Java 基礎編 | Java | 136 |
-| Java 上級編 | Java | 70 |
-| Java テスト 基礎＆実践 | JUnit 5 / Gradle | 137 |
-| Spring Boot 基礎編 | Spring Boot 4 | 10 |
-| Spring Boot + RDB 基礎編 | Spring Boot 4 + JPA | 3 |
-| Java + RDB 基礎編 | Java + HSQLDB | 5 |
-| SQL 基礎編 | HSQLDB | 8 |
-| Python 基礎編 | Python | 10 |
-| TypeScript 基礎編 | TypeScript | 8 |
+各インストーラには、下表のコースが **1 つだけ**収録されています。
 
-教材は全 9 言語にローカライズされています。
+| コース | 種別 | 問数 | インストーラ |
+|---|---|---|---|
+| Java 基礎編 | Java | 136 | `chatinable-lite-java-basic` |
+| Java 上級編 | Java | 70 | `chatinable-lite-java-advanced` |
+| Java テスト 基礎＆実践 | JUnit 5 / Gradle | 137 | `chatinable-lite-java-testing` |
 
 ---
 
@@ -75,12 +85,10 @@ AI Teacher を使うには API キーの登録が必要です。⚙ 設定パネ
 
 | ランタイム | 内容 | 用途 |
 |---|---|---|
-| Java | Temurin JDK 25 を jlink で最小化（`javac` 同梱） | Java / テスト / Spring Boot 系 |
-| Node.js | portable Node.js 24 LTS | TypeScript（type stripping で `.ts` を直接実行） |
-| Python | embeddable Python 3.13 | Python |
-| HSQLDB | hsqldb 2.7.3 | SQL / RDB 系 |
+| Java | Temurin JDK 25 を jlink で最小化（`javac` 同梱） | 全コース |
+| Gradle Wrapper | `gradle-wrapper.jar` | Java テスト編のビルド・テスト実行 |
 
-Gradle は Spring Boot コースの初回実行時に Gradle Wrapper が自動取得します
+Java テスト編では、初回のテスト実行時に Gradle Wrapper が Gradle 本体を自動取得します
 （このときだけネットワーク接続が必要です）。
 
 ---
@@ -90,29 +98,38 @@ Gradle は Spring Boot コースの初回実行時に Gradle Wrapper が自動�
 - **設問 × エディタ × 実行結果 × AI Teacher** を1画面に統合
 - **AI Teacher**（💡ヒント / 🔍レビュー / 自由質問）。会話は設問ごとに保持されます
 - **音声読み上げ**。AI の回答を Gemini Live で音声解説（声・話し方を選択可）
-- **ワークスペース**。書いたコードと学習履歴は `~/chatinable-open/` に保存されます
+- **ワークスペース**。書いたコードと学習履歴は `~/chatinable-lite/` に保存されます
 - **ライト / ダークテーマ**、フォント・フォントサイズ変更
-- **簡易ターミナル**、Spring Boot アプリのブラウザプレビュー
+- **簡易ターミナル**
+
+書いたコードと学習履歴は 3 本で同じワークスペース（`~/chatinable-lite/`）に
+保存されますが、コースごとに分かれて記録されるため混ざることはありません。
 
 ---
 
 ## アンインストール
 
-Windows の「設定」→「アプリ」から **Chatinable Open** をアンインストールしてください。
+Windows の「設定」→「アプリ」から、該当するコースのアプリを
+アンインストールしてください。
 
-ワークスペース（`~/chatinable-open/`）と設定は残ります。
-完全に削除する場合は、以下も手動で削除してください。
+- **Chatinable Lite - Java 基礎編**
+- **Chatinable Lite - Java 上級編**
+- **Chatinable Lite - Java テスト編**
+
+ワークスペース（`~/chatinable-lite/`）と設定は残ります。これらは 3 本で共有しているため、
+1 本だけアンインストールしても他のコースの学習履歴は保持されます。
+完全に削除する場合は、すべてのコースをアンインストールしたうえで、以下も手動で削除してください。
 
 ```
-%USERPROFILE%\chatinable-open\
-%APPDATA%\Chatinable Open\
+%USERPROFILE%\chatinable-lite\
+%APPDATA%\Chatinable Lite\
 ```
 
 ---
 
 ## このリポジトリについて
 
-**このリポジトリは Chatinable Open のインストーラを配布するためのものです。
+**このリポジトリは Chatinable Lite のインストーラを配布するためのものです。
 アプリケーションのソースコードは公開していません。**
 
 - 不具合の報告・要望は [Issues](../../issues) へお願いします
