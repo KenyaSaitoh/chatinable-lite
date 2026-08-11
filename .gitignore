@@ -1,0 +1,10 @@
+# このリポジトリはインストーラ配布専用です。ソースコードは置きません。
+# リリース成果物は GitHub Releases に添付し、リポジトリにはコミットしません。
+*.exe
+*.zip
+*.blockmap
+*.yml
+!.github/**/*.yml
+
+.DS_Store
+Thumbs.db
