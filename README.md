@@ -15,16 +15,16 @@ Chatinable Lite は **BYOK 版**です。AI Teacher 機能はご自身の
 
 ## ダウンロード
 
-**［[最新版をダウンロード](../../releases/latest)］**
+**コースごとに独立したインストーラ**を、**コースごとのリリース**として配布しています。
+学びたいコースのリンクからダウンロードして実行してください。
 
-**コースごとに独立したインストーラ**になっています。学びたいコースのものを
-ダウンロードして実行してください。
+| コース | ダウンロード | インストーラ |
+|---|---|---|
+| Java 基礎編 | [java-basic-v1.6.0](../../releases/tag/java-basic-v1.6.0) | `chatinable-lite-java-basic-setup-1.6.0.exe` |
+| Java 上級編 | [java-advanced-v1.6.0](../../releases/tag/java-advanced-v1.6.0) | `chatinable-lite-java-advanced-setup-1.6.0.exe` |
+| Java テスト 基礎＆実践 | [java-testing-v1.6.0](../../releases/tag/java-testing-v1.6.0) | `chatinable-lite-java-testing-setup-1.6.0.exe` |
 
-| インストーラ | 収録コース |
-|---|---|
-| `chatinable-lite-java-basic-setup-<version>.exe` | Java 基礎編 |
-| `chatinable-lite-java-advanced-setup-<version>.exe` | Java 上級編 |
-| `chatinable-lite-java-testing-setup-<version>.exe` | Java テスト 基礎＆実践 |
+過去のバージョンを含むすべての配布物は [Releases](../../releases) にあります。
 
 3 本は別々のアプリとしてインストールされるため、**同一 PC に共存できます**
 （設定と学習ファイルの保存先は 3 本で共有されます）。
@@ -74,11 +74,14 @@ AI Teacher を使うには API キーの登録が必要です。初回起動時�
 
 各インストーラには、下表のコースが **1 つだけ**収録されています。
 
-| コース | 種別 | 問数 | インストーラ |
-|---|---|---|---|
-| Java 基礎編 | Java | 136 | `chatinable-lite-java-basic` |
-| Java 上級編 | Java | 70 | `chatinable-lite-java-advanced` |
-| Java テスト 基礎＆実践 | JUnit 5 / Gradle | 137 | `chatinable-lite-java-testing` |
+各コースは**講義レッスンと演習**で構成されています。まず講義で文法・仕組みを
+図解つきで読み、続く演習で実際にコードを書いて確かめる流れです。
+
+| コース | 種別 | 講義 | 演習 | 合計 | インストーラ |
+|---|---|---|---|---|---|
+| Java 基礎編 | Java | 58 | 136 | 194 | `chatinable-lite-java-basic` |
+| Java 上級編 | Java | 39 | 70 | 109 | `chatinable-lite-java-advanced` |
+| Java テスト 基礎＆実践 | JUnit 5 / Gradle | 39 | 140 | 179 | `chatinable-lite-java-testing` |
 
 ---
 
@@ -99,6 +102,8 @@ Java テスト編では、初回のテスト実行時に Gradle Wrapper が Grad
 ## 主な機能
 
 - **設問 × エディタ × 実行結果 × AI Teacher** を1画面に統合
+- **講義レッスン**。図解つきの解説を1ステップずつ読み進められ、解説に合わせて
+  エディタの該当行がハイライトされます
 - **AI Teacher**（💡ヒント / 🔍レビュー / 自由質問）。会話は設問ごとに保持されます
 - **音声読み上げ**。AI の回答を Gemini Live で音声解説（声・話し方を選択可）
 - **ワークスペース**。書いたコードと学習履歴は `~/chatinable-lite/` に保存されます
