@@ -20,9 +20,9 @@ Chatinable Lite は **BYOK 版**です。AI Teacher 機能はご自身の
 
 | コース | ダウンロード | インストーラ |
 |---|---|---|
-| Java 基礎編 | [java-basic-v1.6.2](../../releases/tag/java-basic-v1.6.2) | `chatinable-lite-java-basic-setup-1.6.2.exe` |
-| Java 上級編 | [java-advanced-v1.6.2](../../releases/tag/java-advanced-v1.6.2) | `chatinable-lite-java-advanced-setup-1.6.2.exe` |
-| Java テスト 基礎＆実践 | [java-testing-v1.6.2](../../releases/tag/java-testing-v1.6.2) | `chatinable-lite-java-testing-setup-1.6.2.exe` |
+| Java 基礎編 | [java-basic-v1.6.3](../../releases/tag/java-basic-v1.6.3) | `chatinable-lite-java-basic-setup-1.6.3.exe` |
+| Java 上級編 | [java-advanced-v1.6.3](../../releases/tag/java-advanced-v1.6.3) | `chatinable-lite-java-advanced-setup-1.6.3.exe` |
+| Java テスト 基礎＆実践 | [java-testing-v1.6.3](../../releases/tag/java-testing-v1.6.3) | `chatinable-lite-java-testing-setup-1.6.3.exe` |
 
 過去のバージョンを含むすべての配布物は [Releases](../../releases) にあります。
 
