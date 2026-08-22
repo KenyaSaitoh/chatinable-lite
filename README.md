@@ -7,8 +7,9 @@ JDK を別途インストールする必要はありません。
 教材・コードエディタ・実行環境・AI Teacher がひとつのアプリに統合されています。
 
 Chatinable Lite は **BYOK 版**です。AI Teacher 機能はご自身の
-[Anthropic API キー](https://console.anthropic.com/) で動作します
-（Bring Your Own Key）。UI・教材は**日本語のみ**です。
+[Gemini API キー](https://aistudio.google.com/apikey) で動作します
+（Bring Your Own Key）。用意していただくキーは**この 1 つだけ**で、
+チャットも音声読み上げも同じキーで動きます。UI・教材は**日本語のみ**です。
 
 ---
 
@@ -50,16 +51,18 @@ Chatinable Lite は **BYOK 版**です。AI Teacher 機能はご自身の
 AI Teacher を使うには API キーの登録が必要です。初回起動時に案内のダイアログが出るので、
 ⚙ 設定パネルから登録してください
 （「今後このお知らせを表示しない」にチェックを入れると次回から表示されません）。
-キーは端末内の設定ファイルにのみ保存されます（Gemini API キーは OS の資格情報ストア
-`safeStorage` で暗号化されます）。外部に送信されるのは各 API 提供元のみです。
+キーは端末内の設定ファイルにのみ保存され（OS の資格情報ストア `safeStorage` で
+暗号化されます）、送信先は Google の API だけです。
 
 | キー | 用途 | 必須 | 取得先 |
 |---|---|---|---|
-| Anthropic API キー | AI Teacher のチャット（ヒント・レビュー・自由質問） | 必須 | [console.anthropic.com](https://console.anthropic.com/) |
-| Gemini API キー | AI Teacher の回答の音声読み上げ | 任意 | [aistudio.google.com](https://aistudio.google.com/apikey) |
+| Gemini API キー | AI Teacher のチャット（ヒント・レビュー・自由質問）と回答の音声読み上げ | 必須 | [aistudio.google.com/apikey](https://aistudio.google.com/apikey) |
+
+⚙ 設定パネルの Gemini API キー欄にある
+**「API キーを取得する（Google AI Studio）」**リンクから、取得ページを直接開けます。
 
 > **料金について**
-> API の利用料金は、各 API 提供元からお客様に直接請求されます。
+> API の利用料金は、Google からお客様に直接請求されます。
 > 本アプリの作者は課金に関与しません。
 
 登録した API キーは 3 本のインストーラで共有されるため、1 度登録すれば
