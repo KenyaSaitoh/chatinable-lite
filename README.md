@@ -19,7 +19,7 @@ Chatinable Lite は **BYOK 版**です。AI Teacher 機能はご自身の
 
 | インストーラ | 収録コース | ダウンロード |
 |---|---|---|
-| `chatinable-lite-java-setup-1.7.2.exe` | Java 基礎編 / 上級編 / テスト 基礎＆実践 | [java-v1.7.2](../../releases/tag/java-v1.7.2) |
+| `chatinable-lite-java-setup-1.7.3.exe` | Java 基礎編 / 上級編 / テスト 基礎＆実践 | [java-v1.7.3](../../releases/tag/java-v1.7.3) |
 
 過去のバージョンを含むすべての配布物は [Releases](../../releases) にあります。
 
