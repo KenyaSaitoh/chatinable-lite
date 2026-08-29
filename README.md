@@ -19,7 +19,7 @@ Chatinable Lite は **BYOK 版**です。AI Mentor 機能はご自身の
 
 | 配布ファイル | 収録コース | ダウンロード |
 |---|---|---|
-| `chatinable-lite-java-202609.01.05.zip` | Java 基礎編 / 上級編 / テスト 基礎＆実践 | [java-v202609.01.05](../../releases/tag/java-v202609.01.05) |
+| `chatinable-lite-java-202609.01.06.zip` | Java 基礎編 / 上級編 / テスト 基礎＆実践 | [java-v202609.01.06](../../releases/tag/java-v202609.01.06) |
 
 過去のバージョンを含むすべての配布物は [Releases](../../releases) にあります。
 
@@ -30,7 +30,7 @@ Chatinable Lite は **BYOK 版**です。AI Mentor 機能はご自身の
 | 解凍後 | 約 450MB |
 | 管理者権限 | 不要（インストールしないため） |
 
-ZIP を解凍すると `chatinable-lite-java-202609.01.05/` というフォルダが 1 つでき、
+ZIP を解凍すると `chatinable-lite-java-202609.01.06/` というフォルダが 1 つでき、
 その中の **`chatinable-lite-java.exe`** を実行すればアプリが起動します。
 置き場所はどこでもかまいません（USB メモリに入れて持ち運ぶこともできます）。
 
