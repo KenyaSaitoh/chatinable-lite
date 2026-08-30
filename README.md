@@ -11,6 +11,8 @@ Chatinable Lite は **BYOK 版**です。AI Mentor 機能はご自身の
 （Bring Your Own Key）。用意していただくキーは**この 1 つだけ**で、
 チャットも音声読み上げも同じキーで動きます。UI・教材は**日本語のみ**です。
 
+<img width="2560" height="1380" alt="image" src="https://github.com/user-attachments/assets/0d530275-fe81-49b1-9736-c5b08501ac5a" />
+
 ---
 
 ## ダウンロード
